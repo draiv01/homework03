@@ -4,27 +4,22 @@
 
 
 
-// void Palindrom()
-//         {
-//             uint a = uint.Parse(Console.ReadLine());
-//             uint b = a;
-//             var col = new List<uint>();
-//             while (b > 0)
-//             {
-//                 col.Add(b % 10);
-//                 b = b / 10;
-//             }
-//             b = 0;
-//             col.Reverse();
-//             for(int mcol = 0; mcol < col.Count; mcol++)
-//                 b = b + col[mcol] * (uint)Math.Pow(10, mcol);
-//             if (a == b)
-//                 Console.WriteLine("да");
-//             else
-//                 Console.WriteLine("нет");
-//             Console.ReadLine();
-//         }
 
+// void Pal (int number)
+// {
+// int number1 = 1;
+//     if (number1 >= 123)
+//     {
+//         System.Console.Write((number1 >= 321) + "да");
+//         number1++;
+//     else
+//         Console.WriteLine("нет");
+//     }
+// }
+
+// System.Console.WriteLine("Please, write number");
+// int user = Convert.ToInt32(Console.ReadLine());
+// Pal(user);
 
 
 
@@ -33,30 +28,30 @@
 
 
 
-// int x1 = Coordinate("x", "A");
-// int y1 = Coordinate("y", "A");
-// int z1 = Coordinate("z", "A");
-// int x2 = Coordinate("x", "B");
-// int y2 = Coordinate("y", "B");
-// int z2 = Coordinate("z", "B");
 
-// int Coordinate(string Name1, string Name2)
+
+// void Dist (int x1, int x2, int y1, int y2, int z1, int z2)
 // {
-//     Console.Write($"Введите координату {Name1} точки {Name2}: ");
-//     return Convert.ToInt16(Console.ReadLine());
+//     double d =Math.Sqrt(Math.Pow((x2-x1),2)+Math.Pow((y2-y1),2)+Math.Pow((z2-z1),2));
+//     Console.WriteLine($"Расстояние: {Math.Round(d,3)}");
 // }
 
-// double Decision(double x1, double x2, 
-//                 double y1, double y2, 
-//                 double z1, double z2){
-//   return Math.Sqrt(Math.Pow((x2-x1), 2) + 
-//                    Math.Pow((y2-y1), 2) + 
-//                    Math.Pow((z2-z1), 2));
-// }
+// Console.Write("Введите координату x1: ");
+// int x1 = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите координату y1: ");
+// int y1 = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите координату z1: ");
+// int z1 = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите координату x2: ");
+// int x2 = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите координату y2: ");
+// int y2 = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите координату z2: ");
+// int z2 = Convert.ToInt32(Console.ReadLine());
 
-// double segment =  Math.Round (Decision(x1, x2, y1, y2, z1, z2), 2 );
+// Dist(x1, x2, y1, y2, z1, z2);
 
-// Console.WriteLine($"Длина отрезка  {segment}");
+
 
 
 //Задача 23: Напишите программу, которая принимает на вход число (N) и выдаёт таблицу кубов чисел от 1 до N.
